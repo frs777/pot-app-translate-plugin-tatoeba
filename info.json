@@ -1,5 +1,5 @@
 {
-  "id": "[plugin].com.pot-app.tatoeba",
+  "id": "plugin.com.pot-app.tatoeba",
   "plugin_type": "translate",
   "icon": "tatoeba.svg",
   "display": "Tatoeba",
