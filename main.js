@@ -3,13 +3,14 @@ async function translate(text, from, to, options) {
     const { tauriFetch: fetch } = utils;
     const res = await fetch(`https://tatoeba.org/eng/api_v0/search`, {
         method: 'GET',
-        query: [
-            { "query": text },
-            { "from": from },
-            { "to": to },
-            { "has_audio": "no" },
-            { "sort": "relevance" },
-        ]
+        query:
+            {
+                "query": text,
+                "from": from,
+                "to": to,
+                "has_audio": "no",
+                "sort": "relevance"
+            }
     });
 
     if (res.ok) {
